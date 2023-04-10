@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Business card</string>
+    <string name="dr_novikov">Novikov Azamat</string>
+    <string name="dr_nurmatov">Nurmatov Zamir</string>
+    <string name="dr_khalilova">Khalilova Munisa</string>
+    <string name="dr_alieva">Alieva Adina</string>
+    <string name="dr_kolesova">Kolesova Victoria</string>
 </resources>

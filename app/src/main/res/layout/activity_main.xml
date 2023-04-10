@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_page_background"
     tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="19dp"
+        android:paddingStart="14dp"
+        android:background="@color/main_page_button"
+        android:text="@string/dr_novikov"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="19dp"
+        android:paddingStart="14dp"
+        android:background="@color/main_page_button"
+        android:text="@string/dr_nurmatov"
+        android:textAlignment="viewStart"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="19dp"
+        android:paddingStart="14dp"
+        android:background="@color/main_page_button"
+        android:text="@string/dr_khalilova"
+        android:textAlignment="viewStart"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="19dp"
+        android:paddingStart="14dp"
+        android:background="@color/main_page_button"
+        android:text="@string/dr_alieva"
+        android:textAlignment="viewStart"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingVertical="19dp"
+        android:paddingStart="14dp"
+        android:background="@color/main_page_button"
+        android:text="@string/dr_kolesova"
+        android:textAlignment="viewStart"/>
+
+</LinearLayout>
