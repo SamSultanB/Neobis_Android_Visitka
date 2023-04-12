@@ -19,21 +19,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <ImageView
-            android:id="@+id/image_doctor"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_doctor_holder"
             android:layout_width="98dp"
             android:layout_height="106dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="49dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="7dp"
-            android:layout_marginBottom="19dp"
+            android:layout_marginBottom="28dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/text_prof"
             app:layout_constraintHorizontal_bias="0.051"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/doctor1" />
+            android:elevation="12dp"
+            app:cardCornerRadius="50dp"
+            android:layout_centerHorizontal="true"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+
+            <ImageView
+                android:id="@+id/image_doctor"
+                android:layout_width="98dp"
+                android:layout_height="106dp"
+                app:srcCompat="@drawable/doctor1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+        </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:id="@+id/text_name"
@@ -43,11 +58,11 @@
             android:layout_marginTop="69dp"
             android:layout_marginEnd="85dp"
             android:layout_marginBottom="5dp"
-            android:text="Dr. SomeOne"
+            android:text="@string/dr_novikov"
             android:textSize="26sp"
             app:layout_constraintBottom_toTopOf="@+id/text_prof"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/image_doctor"
+            app:layout_constraintStart_toEndOf="@+id/image_doctor_holder"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -58,18 +73,18 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="170dp"
             android:layout_marginBottom="39dp"
-            android:text="TextView"
+            android:text="@string/dentist"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.875"
-            app:layout_constraintStart_toEndOf="@+id/image_doctor"
+            app:layout_constraintStart_toEndOf="@+id/image_doctor_holder"
             app:layout_constraintTop_toBottomOf="@+id/text_name"
             app:layout_constraintVertical_bias="0.375" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_teeth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -88,12 +103,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/image_teeth"
         app:layout_constraintTop_toBottomOf="@+id/main_bar"
         app:srcCompat="@drawable/dental_clinick" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_dental_friend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -101,7 +116,7 @@
         android:text="@string/welcoming"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/image_teeth"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <GridLayout
@@ -116,7 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/text_dental_friend">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/callCard"
@@ -141,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:text="To call"
+                android:text="@string/to_call"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 />
@@ -171,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:text="WhatsApp"
+                android:text="@string/whatsapp"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 />
@@ -201,7 +216,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:text="Email us"
+                android:text="@string/email"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 />
@@ -231,7 +246,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:text="Visit website"
+                android:text="@string/website"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 />
@@ -262,7 +277,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:text="Telegram"
+                android:text="@string/telegram"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 />
@@ -292,7 +307,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:text="Save contact"
+                android:text="@string/save_contact"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 />
@@ -315,7 +330,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Our Location"
+            android:text="@string/our_location"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
@@ -324,24 +339,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shopping Center Asia Mall"
+            android:text="@string/location"
             android:textSize="16sp"
             android:textColor="@color/black"
             />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1st floor"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            />
-
-        <TextView
+            android:id="@+id/map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Open map"
+            android:text="@string/open_map"
             android:textSize="14sp"
             android:textColor="@color/black"
             android:textStyle="bold"

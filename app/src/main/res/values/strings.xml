@@ -6,4 +6,15 @@
     <string name="dr_alieva">Alieva Adina</string>
     <string name="dr_kolesova">Kolesova Victoria</string>
     <string name="welcoming">Your friendly Dental Friend</string>
+    <string name="dentist">Dentist</string>
+    <string name="to_call">To call</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email">Email us</string>
+    <string name="website">Visit website</string>
+    <string name="telegram">Telegram</string>
+    <string name="save_contact">Save contact</string>
+    <string name="our_location">Our Location</string>
+    <string name="location">Shopping Center Asia Mall, 1st floor</string>
+    <string name="open_map">Open map</string>
+    <string name="doctors">Doctors</string>
 </resources>
