@@ -1,89 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background"
-    tools:context=".Activity2">
-
+    android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main_bar"
         android:layout_width="match_parent"
-        android:layout_height="174dp"
-        android:background="@color/appbar_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        tools:context=".Activity2">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/image_doctor_holder"
-            android:layout_width="98dp"
-            android:layout_height="106dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginBottom="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/text_prof"
-            app:layout_constraintHorizontal_bias="0.051"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_bar"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:background="@color/appbar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            android:elevation="12dp"
-            app:cardCornerRadius="50dp"
-            android:layout_centerHorizontal="true"
-            android:shape="ring"
-            android:thicknessRatio="1.9">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/image_doctor"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image_doctor_holder"
                 android:layout_width="98dp"
                 android:layout_height="106dp"
-                app:srcCompat="@drawable/doctor1"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:elevation="12dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:id="@+id/image_doctor"
+                    android:layout_width="98dp"
+                    android:layout_height="106dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/doctor1" />
+
+            </androidx.cardview.widget.CardView>
 
 
-        <TextView
-            android:id="@+id/text_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="69dp"
-            android:layout_marginEnd="85dp"
-            android:layout_marginBottom="5dp"
-            android:text="@string/dr_novikov"
-            android:textSize="26sp"
-            app:layout_constraintBottom_toTopOf="@+id/text_prof"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/image_doctor_holder"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/dr_novikov"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toTopOf="@+id/text_prof"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_doctor_holder"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Dr. " />
 
-        <TextView
-            android:id="@+id/text_prof"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="170dp"
-            android:layout_marginBottom="39dp"
-            android:text="@string/dentist"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.875"
-            app:layout_constraintStart_toEndOf="@+id/image_doctor_holder"
-            app:layout_constraintTop_toBottomOf="@+id/text_name"
-            app:layout_constraintVertical_bias="0.375" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/text_prof"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="170dp"
+                android:layout_marginBottom="39dp"
+                android:text="@string/dentist"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toStartOf="@+id/text_name"
+                app:layout_constraintTop_toBottomOf="@+id/text_name"
+                app:layout_constraintVertical_bias="0.375" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
+        <ImageView
         android:id="@+id/image_teeth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,7 +93,7 @@
         app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/teeth" />
 
-    <ImageView
+        <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/main_bar"
         app:srcCompat="@drawable/dental_clinick" />
 
-    <TextView
+        <TextView
         android:id="@+id/text_dental_friend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,7 +115,7 @@
         app:layout_constraintStart_toEndOf="@+id/image_teeth"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <GridLayout
+        <GridLayout
         android:id="@+id/cardHolder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -133,229 +129,226 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_dental_friend">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/callCard"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="7dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/callCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
 
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/call"
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/call"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/to_call"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/whatsAppCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/whatsapp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/whatsapp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/emailCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/email"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/webSiteCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/website" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/website"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/telegramCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/telegram"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:text="@string/to_call"
-                android:textSize="14sp"
-                android:textColor="@color/black"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/telegram"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
                 />
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/whatsAppCard"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="7dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/saveContactCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp">
 
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/whatsapp" />
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/savecontact" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:text="@string/whatsapp"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/save_contact"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/emailCard"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="7dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp">
-
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/email" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:text="@string/email"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                />
-
-        </androidx.cardview.widget.CardView>
+        </GridLayout>
 
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/webSiteCard"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="7dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp">
-
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/website" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:text="@string/website"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                />
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/telegramCard"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="7dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp">
-
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/telegram"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:text="@string/telegram"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                />
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/saveContactCard"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="7dp"
-            app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="8dp">
-
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/savecontact" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="60dp"
-                android:text="@string/save_contact"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                />
-        </androidx.cardview.widget.CardView>
-
-    </GridLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardHolder">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/our_location"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            />
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardHolder">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/location"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/our_location"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/map"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="@string/open_map"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/open_map"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -28,6 +28,7 @@ class Activity2 : AppCompatActivity() {
 
     }
 
+    //This method is used to make a call
     fun callAction(uri: String){
         try {
             var call = Intent(Intent.ACTION_DIAL, Uri.parse(uri))
@@ -37,6 +38,7 @@ class Activity2 : AppCompatActivity() {
         }
     }
 
+    //This method is used to go to the gmail
     fun gmailAction(uri: String){
         try {
             var gmail = Intent(Intent.ACTION_SENDTO, Uri.parse(uri))
@@ -46,6 +48,7 @@ class Activity2 : AppCompatActivity() {
         }
     }
 
+    //It redirects user to the Website
     fun websiteAction(uri: String){
         try {
             var website = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
@@ -55,6 +58,7 @@ class Activity2 : AppCompatActivity() {
         }
     }
 
+    //It opens map
     fun mapAction(uri: String){
         try {
             var map = Intent(Intent.ACTION_VIEW, Uri.parse(uri))

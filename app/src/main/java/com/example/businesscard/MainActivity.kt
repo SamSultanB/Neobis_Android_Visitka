@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding.button5.setOnClickListener { passData("Dr. Kolesova", "Doctor", R.drawable.doctor5) }
     }
 
+    //This method is used to pass and to open the second activity
     fun passData(name: String, speciality: String, photo: Int){
         var intent = Intent(this, Activity2::class.java)
         intent.putExtra("name", name)

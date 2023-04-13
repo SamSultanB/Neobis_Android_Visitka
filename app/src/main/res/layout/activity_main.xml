@@ -1,76 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/main_background"
-    tools:context=".MainActivity">
-    
-    <TextView
+    android:fillViewport="true">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingStart="14dp"
-        android:text="@string/doctors"
-        android:textColor="@color/black"
-        android:textSize="30sp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_background"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:paddingVertical="19dp"
-        android:paddingStart="14dp"
-        android:background="@color/main_page_button"
-        android:text="@string/dr_novikov"
-        android:textAlignment="viewStart" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="14dp"
+            android:text="@string/doctors"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:paddingVertical="19dp"
-        android:paddingStart="14dp"
-        android:background="@color/main_page_button"
-        android:text="@string/dr_nurmatov"
-        android:textAlignment="viewStart"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingVertical="19dp"
+            android:paddingStart="14dp"
+            android:background="@color/main_page_button"
+            android:text="@string/dr_novikov"
+            android:fontFamily="@font/abhaya_libre"
+            android:textAlignment="viewStart" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:paddingVertical="19dp"
-        android:paddingStart="14dp"
-        android:background="@color/main_page_button"
-        android:text="@string/dr_khalilova"
-        android:textAlignment="viewStart"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingVertical="19dp"
+            android:paddingStart="14dp"
+            android:background="@color/main_page_button"
+            android:text="@string/dr_nurmatov"
+            android:fontFamily="@font/abhaya_libre"
+            android:textAlignment="viewStart"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:paddingVertical="19dp"
-        android:paddingStart="14dp"
-        android:background="@color/main_page_button"
-        android:text="@string/dr_alieva"
-        android:textAlignment="viewStart"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingVertical="19dp"
+            android:paddingStart="14dp"
+            android:background="@color/main_page_button"
+            android:text="@string/dr_khalilova"
+            android:fontFamily="@font/abhaya_libre"
+            android:textAlignment="viewStart"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:paddingVertical="19dp"
-        android:paddingStart="14dp"
-        android:background="@color/main_page_button"
-        android:text="@string/dr_kolesova"
-        android:textAlignment="viewStart"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingVertical="19dp"
+            android:paddingStart="14dp"
+            android:background="@color/main_page_button"
+            android:text="@string/dr_alieva"
+            android:fontFamily="@font/abhaya_libre"
+            android:textAlignment="viewStart"/>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingVertical="19dp"
+            android:paddingStart="14dp"
+            android:background="@color/main_page_button"
+            android:text="@string/dr_kolesova"
+            android:fontFamily="@font/abhaya_libre"
+            android:textAlignment="viewStart"/>
+
+    </LinearLayout>
+
+</ScrollView>
