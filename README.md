@@ -12,8 +12,8 @@ ___
 
 ##How the App looks like
 ####Main page
-![](/home/lux/Pictures/main.jpg)
+![](main.jpg)
 ___
 ####Information page
-![](/home/lux/Pictures/second.jpg)
+![](second.jpg)
 
