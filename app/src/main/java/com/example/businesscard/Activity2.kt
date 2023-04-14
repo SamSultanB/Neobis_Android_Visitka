@@ -18,9 +18,11 @@ class Activity2 : AppCompatActivity() {
         binding = Activity2Binding.inflate(layoutInflater)
         setContentView(binding.root)
         var intent = intent
+        //getting sent sent
         binding.imageDoctor.setImageResource(intent.getIntExtra("photo", 0))
         binding.textName.setText(intent.getStringExtra("name"))
         binding.textProf.setText(intent.getStringExtra("speciality"))
+        //second activity's actions
         binding.callCard.setOnClickListener { callAction("tel: 0557130028") }
         binding.emailCard.setOnClickListener { gmailAction("mailto:someone@gmail.com") }
         binding.webSiteCard.setOnClickListener { websiteAction("http://www.google.com") }
